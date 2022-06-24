@@ -19,27 +19,51 @@
 
 
 <form action="mailto:bestellen@sol4bio.nl?subject=SOL4BIO bestelling" method="post" enctype="text/plain">
-Voer hier uw naam in:<br>
-<input type="text" name="Uw naam" required><br>
-Voer hier uw straatnaam en huisnummer in:<br>
-<input type="text" name="Straatnaam en huisnummer" required><br>
-Voer hier uw postcode en woonplaats in:<br>
-<input type="text" name="Postcode en woonplaats" required><br>
-Voer hier uw e-mail in:<br>
-<input type="text" name="Uw e-mail" required><br>
 
-Aantal eieren wat u wilt bestellen (los per stuk €0,20)<br>
-<input type="number" name="Eieren per stuk" id="Ei1" min="0" max="9"><br>
-Aantal eieren wat u wilt bestellen (doos 10 stuks €1,90)<br>
-<input type="number" name="Eieren doos 10 stuks" id="Ei2" min="0" max="20"><br>
-Aantal liter melk wat u wilt bestellen (per fles 1 liter €1,10)<br>
-<input type="number" name="Liter flessen melk" id="Melk1" min="0" max="20"><br>
-Aantal blokken kaas wat u wilt bestellen (per blok 250 gram €4,59)<br>
-<input type="number" name="Blokken kaas 250 gram" id="Kaas1" min="0" max="20"><br>
-Aantal pakken boter wat u wilt bestellen (per blok 200 gram €1,99)<br>
-<input type="number" name="Pakken boter 250 gram" id="Boter1" min="0" max="20"><br>
-Voer hier uw eventuele kortingscode in:<br>
-<input type="text" name="Kortingscode" size="50"><br><br>
+<h2>Voer hier uw bestelgegevens in:</h2>
+<select name="Voorzetsel" id="Voorzetsel" required>
+    <option value="">Voorzetsel</option>
+    <option value="Dhr.">Dhr.</option>
+    <option value="Mvr.">Mvr.</option>
+    <option value="Mv.">Mv.</option>
+</select>
+<input type="text" name="Uw voornaam" placeholder="Voornaam" required>
+<input type="text" name="Uw achternaam" placeholder="Achternaamnaam" required>
+<input type="text" name="Tussenvoegsels" placeholder="Eventuele tussenvoegsels">
+
+<br><br>
+
+<input type="text" name="Uw e-mail" size="33" placeholder="E-mail adres" required>
+
+<br><br>
+
+<input type="text" name="Straatnaam" placeholder="Straatnaam" required>
+<input type="text" name="Huisnummer" size="8" placeholder="Huisnummer" required>
+
+<br><br>
+
+<input type="text" name="Postcode" size="10" placeholder="Postcode" required>
+<input type="text" name="Woonplaats" placeholder="Woonplaats" required>
+
+<br>
+
+<h3>Aantal eieren wat u wilt bestellen (los per stuk €0,20)</h3>
+<input type="number" name="Eieren per stuk" id="Ei1" min="0" max="9" placeholder="Eieren 1 stuk">
+
+<h3>Aantal eieren wat u wilt bestellen (doos 10 stuks €1,90)</h3>
+<input type="number" name="Eieren doos 10 stuks" id="Ei2" min="0" max="20" placeholder="Eieren doos 10 stuks">
+
+<h3>Aantal liter melk wat u wilt bestellen (per fles 1 liter €1,10)</h3>
+<input type="number" name="Liter flessen melk" id="Melk1" min="0" max="20" placeholder="Melk 1 liter">
+
+<h3>Aantal blokken kaas wat u wilt bestellen (per blok 250 gram €4,59)</h3>
+<input type="number" name="Blokken kaas 250 gram" id="Kaas1" min="0" max="20" placeholder="Kaas 250 gram">
+
+<h3>Aantal pakken boter wat u wilt bestellen (per blok 200 gram €1,99)</h3>
+<input type="number" name="Pakken boter 250 gram" id="Boter1" min="0" max="20" placeholder="Boter 200 gram">
+
+<h3>Voer hier uw eventuele kortingscode in:</h3>
+<input type="text" name="Kortingscode" placeholder="Kortingscode" size="50"><br><br>
 
 <select name="Betaalmethode" id="Betaalmethode" required>
     <option value="">Kies uw betaalmethode</option>
